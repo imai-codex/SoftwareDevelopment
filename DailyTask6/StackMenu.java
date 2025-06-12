@@ -44,7 +44,7 @@ public class StackMenu {
 		        System.out.print("Enter size of the stack: ");
 		        int size = scanner.nextInt();
 	        StackMenu myStack = new StackMenu(size);
-	        int choice, value;
+	        int choice;
 	        while (true) {
 	            System.out.println("Menu:");
 	            System.out.println("1. Push");
@@ -56,7 +56,7 @@ public class StackMenu {
 	            switch (choice) {
 	                case 1:
 	                    System.out.print("push the value: ");
-	                    value = scanner.nextInt();
+	                    int value = scanner.nextInt();
 	                    myStack.push(value);
 	                    break;
 	                case 2:

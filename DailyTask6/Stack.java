@@ -29,13 +29,24 @@ public class Stack {
 			System.out.println("Stack underflowed");
 		}
 	}
+	public void display() {
+		if (top == -1) {
+			System.out.println("Stack is empty");
+		} else {
+			System.out.println("Stack :");
+			for (int i = top; i >= 0; i--) {
+				System.out.println(stack[i]);
+			}
+		}
+	}
 	public static void main(String[]args) {
 		Stack s=new Stack(5);
 		s.push(11);
 		s.push(26);
 		s.push(37);
-		s.push(0);
+		s.push(3);
 		s.pop();
 		s.pop();
+		s.display();
 	}
 }
